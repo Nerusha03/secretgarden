@@ -121,7 +121,6 @@
     }
 
     .slide{
-        flex: 0 0 100%;
         padding: 5em;
         border-radius: 2em;
         scroll-snap-align: start;
