@@ -6,7 +6,7 @@
         background-image: url("img/background.png");
         background-size: cover;
         background-repeat: repeat;
-        font-family: fantasy;
+        font-family: papyrus;
         background-attachment: scroll;
         
     }
@@ -50,15 +50,21 @@
     }
     footer{
         background-color: black;
-        opacity: 50%;
-        color: aliceblue;
-        bottom: 0;
+        opacity: 60%;
+        color: #F4DDCE;
+        padding: 20px;
+        justify-content: space-between;;
+        margin-top: 2em;
+        
+    }
+    footer ul{
+        list-style-type: none;
     }
     .mainimg{
         max-width: 100%;
     }
     
-
+/*home pagina*/
     .introduction{
         background-color: #F4DDCE;
         color:#3C2415;
@@ -67,7 +73,7 @@
         margin: 1em;
     }
     .phototitel{
-        background-color: #63A98F;
+        background-color: #F4DDCE;
         color: #3C2415;
         width: fit-content;
         padding: 0.2em;
@@ -76,24 +82,26 @@
         margin: 0 auto;
     }
    
-    .photo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
+
     .photo img {
-        width: calc(50% - 1em);
+        width: 40%;
+        height: auto;
         margin: 0.5em;
         border-radius: 1.5em;
+        object-fit: cover;
+        border: 0.5em solid #F4DDCE;
+        
     }
-    
+
+
+    /*droog pagina*/
     .introdroog{
         background-color: #63A98F;
         color:#3C2415;
         border-radius: 1em;
         padding: 1.5em;
         width: 100%;
+        margin-bottom: 1em;
     }
   
     .droogvlag{
@@ -103,31 +111,74 @@
     }  
     .contentdroog { 
         display: flex;
-    }     
+    }  
+    .infodroog{
+        background-color: #63A98F;
+        color:#3C2415;
+        padding: 1em;
+    }
+  /* photo's slide */
+  .dslides{
+    display: flex;
+    width: 100%;
+    background: #63A98F;
+    border-bottom: 1em;
+    overflow-x: scroll;
+    scroll-padding: 2em;
+    scroll-snap-type: x mandatory;
+   
+}
 
+.dslide{
+    padding: 2em;
+    scroll-snap-align: start;
+    width: 70%;
+    
+}
+
+/* photo's slide */
     .slides{
         display: flex;
-        padding: 2px;
         width: 100%;
         background: #3C2415;
         border-bottom: 1em;
         overflow-x: scroll;
-        scroll-padding: 5em;
+        scroll-padding: 2em;
         scroll-snap-type: x mandatory;
-        gap: 2em;
-        margin: 2em auto;
-
-      
+       
     }
 
     .slide{
-        padding: 5em;
-        border-radius: 2em;
+        padding: 2em;
         scroll-snap-align: start;
-        width: 50%;
+        width: 70%;
+        
     }
 
-      
+    /*oudemanhuispoort*/
+
+    .introuva{
+        background-color: #3C2415;
+        color:#F4DDCE;
+        border-radius: 1em;
+        padding: 1.5em;
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+  
+    .ingang{
+        width: 95%;
+        margin: 0.5em;
+        border-radius: 1em;
+    }  
+    .contentuva { 
+        display: flex;
+    }   
+    .infouva{
+        background-color: #3C2415;
+        color:#F4DDCE;
+        padding: 1em;
+    }
 }
 
 
