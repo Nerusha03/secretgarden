@@ -14,7 +14,7 @@
     header {
         background-color: #F4DDCE;
         text-align: center;
-        padding: 5px; 
+        padding: 0.313em; 
     }
     
     nav ul {
@@ -26,7 +26,7 @@
     nav li {
         display: inline; 
         flex-direction: column;
-        margin: 15px;
+        margin: 1em;
         font-size: 2em;
     }                                       
     
@@ -52,7 +52,7 @@
         background-color: black;
         opacity: 60%;
         color: #F4DDCE;
-        padding: 20px;
+        padding: 1.25em;
         justify-content: space-between;;
         margin-top: 2em;
         
