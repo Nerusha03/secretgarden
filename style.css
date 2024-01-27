@@ -6,7 +6,7 @@
         background-image: url("img/background.png");
         background-size: cover;
         background-repeat: repeat;
-        font-family: papyrus;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-attachment: scroll;
         
     }
@@ -46,7 +46,6 @@
     }
     a:hover{
        color: #63A98F;
-        
     }
     footer{
         background-color: black;
