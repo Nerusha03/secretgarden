@@ -9,6 +9,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-attachment: scroll;
         
+        
     }
     
     header {
@@ -47,8 +48,7 @@
        color: #63A98F;
     }
     footer{
-        background-color: black;
-        opacity: 60%;
+        background-color: #3C2415;
         color: #F4DDCE;
         padding: 1.25em;
         justify-content: space-between;;
@@ -59,16 +59,38 @@
         list-style-type: none;
     }
     .mainimg{
-        max-width: 100%;
+        width: 500px;
+        height: 350px;
     }
-    
+    .box {
+        display: flex; 
+        align-items: center;
+    }
+    .titel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #F4DDCE;
+        width: fit-content;
+        font-size: 3em;
+        padding: 0.2em;
+        border-radius: 0.5em;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
 /*home pagina*/
+
+    
     .introduction{
         background-color: #F4DDCE;
         color:#3C2415;
         border-radius: 3em;
         padding: 1em;
         margin: 1em;
+        box-shadow: 0em 0em 0em 1em rgb(244 221 206 / 64%);
+
     }
     .phototitel{
         background-color: #F4DDCE;
@@ -83,23 +105,23 @@
 
     .photo img {
         width: 40%;
-        height: auto;
+        height: 200px; 
         margin: 0.5em;
         border-radius: 1.5em;
         object-fit: cover;
         border: 0.5em solid #F4DDCE;
-        
-    }
+      }
 
 
     /*droog pagina*/
     .introdroog{
-        background-color: #63A98F;
+        background-color: #F4DDCE;
         color:#3C2415;
         border-radius: 1em;
         padding: 1.5em;
         width: 100%;
         margin-bottom: 1em;
+        box-shadow: 1em 5em 0em 1em rgb(244 221 206 / 64%);
     }
   
     .droogvlag{
@@ -111,15 +133,15 @@
         display: flex;
     }  
     .infodroog{
-        background-color: #63A98F;
+        background-color: #F4DDCE;
         color:#3C2415;
         padding: 1em;
+        box-shadow: -1em 0em 0em 1em rgb(244 221 206 / 64%);
     }
   /* photo's slide */
   .dslides{
     display: flex;
     width: 100%;
-    background: #63A98F;
     border-bottom: 1em;
     overflow-x: scroll;
     scroll-padding: 2em;
@@ -135,33 +157,89 @@
 }
 
 /* photo's slide */
-    .slides{
-        display: flex;
-        width: 100%;
-        background: #3C2415;
-        border-bottom: 1em;
-        overflow-x: scroll;
-        scroll-padding: 2em;
-        scroll-snap-type: x mandatory;
-       
-    }
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 30em;
+    position: relative;
+}
 
-    .slide{
-        padding: 2em;
-        scroll-snap-align: start;
-        width: 70%;
-        
+.slide {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    animation: slideshow 20s infinite;
+    margin-top: 1.2em;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 20s;
+}
+
+.slide:nth-child(4) {
+    animation-delay: 30s;
+}
+
+.slide:nth-child(5) {
+    animation-delay: 40s;
+}
+
+.slide:nth-child(6) {
+    animation-delay: 50s;
+}
+
+.slide:nth-child(7) {
+    animation-delay: 60s;
+}
+
+.slide:nth-child(8) {
+    animation-delay: 70s;
+}
+
+.slide:nth-child(9) {
+    animation-delay: 80s;
+}
+
+.slide:nth-child(10) {
+    animation-delay: 90s;
+}
+
+
+
+@keyframes slideshow {
+    0% {
+        opacity: 0;
     }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
     /*oudemanhuispoort*/
 
     .introuva{
-        background-color: #3C2415;
-        color:#F4DDCE;
+        background-color: #F4DDCE;
+        color:#3C2415;
         border-radius: 1em;
         padding: 1.5em;
         width: 100%;
         margin-bottom: 0.5em;
+        box-shadow:  0.5em 1em 0em 1em rgb(244 221 206 / 64%);
     }
   
     .ingang{
@@ -173,10 +251,9 @@
         display: flex;
     }   
     .infouva{
-        background-color: #3C2415;
-        color:#F4DDCE;
+        background-color: #F4DDCE;
+        color:#3C2415;
         padding: 1em;
+        box-shadow: 0em 0em 0em 1em rgb(244 221 206 / 64%);
     }
 }
-
-
